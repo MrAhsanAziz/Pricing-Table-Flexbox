@@ -1,0 +1,101 @@
+body {
+  font-family: "Sono", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.pricing-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1.85rem;
+}
+.pricing-plan {
+  background-color: #d1f5fa;
+  color:#000000;
+  text-align: center;
+  padding: 10px 5px;
+  flex-basis: 280px;
+  height:230px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.plan-title {
+  font-weight: bold;
+}
+.plan-price {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.plan-features li {
+  font-weight: 300;
+  list-style: none;
+  padding: 7px 0;
+}
+.plan-button {
+  background-color: #fd6727;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 10px;
+  align-items: baseline;
+}
+/* Small Devices View */
+@media (max-width: 636px) {
+
+  .pricing-container {
+      flex-direction: column;
+      height: auto;
+      gap: 1.5rem;
+      margin: 50px 0;
+    }
+  
+    .pricing-plan {
+      flex-basis: 200px;
+      width: 280px;
+    }
+
+}
+/* Medium Devices View */
+@media (max-width: 768px) and (min-width: 637px) {
+
+  .pricing-container {
+    height: 100vh;
+    gap: 1rem;
+  }
+
+  .pricing-plan {
+    height: 210px;
+    flex-basis: 180px;
+  }
+    .plan-price {
+      font-size: 1.2rem;
+    }
+  
+    .plan-features li {
+      font-size: 0.75rem;
+    }
+
+}
+/* Laptop */
+/* Medium Devices View */
+@media (max-width: 920px) and (min-width:767px){
+
+  .pricing-container {
+    height: 100vh;
+    gap: 1.35rem;
+  }
+
+  .pricing-plan {
+    height: 210px;
+    flex-basis: 215px;
+  }
+
+  .plan-price {
+    font-size: 1.2rem;
+  }
+
+  .plan-features li {
+    font-size: 0.75rem;
+  }
+}
